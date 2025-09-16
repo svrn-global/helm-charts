@@ -9,6 +9,8 @@ metadata:
     {{- include "ranger.labels" . | nindent 4 }}
 data:
   token: {{ .Values.ranger.token | b64enc }}
+  {{- if .Values.ranger.cfg.crawl.database.connectionstring }}
   connectionstring-{{ .Values.ranger.cfg.crawl.database.name }}: {{ .Values.ranger.cfg.crawl.database.connectionstring | b64enc }}
+  {{- end }}
 type: Opaque
 {{- end }}
