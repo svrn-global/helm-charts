@@ -9,8 +9,9 @@ jobs:
     strategy:
       matrix:
         chart_name: [
-          "soveren-agent",
-          "soveren-dar-sensor"
+          "svrn-dim-sensor",
+          "svrn-dar-sensor",
+          "svrn-dar-ranger"
         ]
     steps:
     - name: Install Helm

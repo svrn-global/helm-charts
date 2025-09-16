@@ -11,7 +11,7 @@ crawler:
   podLabels: {}
   token: ""
   image:
-    name: soveren/crawler
+    name: svrn/crawler
     tag: v0.17.0
     pullPolicy: IfNotPresent
   env: []
@@ -113,7 +113,7 @@ crawler:
         # The Amazon Resource Name (ARN) of the role to assume.
         rolearn: ""
         # An identifier for the assumed role session.
-        rolesessionname: SoverenCrawlerSession
+        rolesessionname: SvrnCrawlerSession
         # The duration of the role session
         # Min: 15 minutes
         # Max: max session duration set for the role in the IAM.
@@ -329,7 +329,7 @@ detectionTool:
   podAnnotations: {}
   podLabels: {}
   image:
-    name: soveren/detection-tool-dar
+    name: svrn/detection-tool-dar
     tag: v2.13.6
     pullPolicy: IfNotPresent
   env: []
@@ -380,7 +380,7 @@ kafka:
     podAnnotations: {}
     podLabels: {}
     image:
-      name: soveren/kafka
+      name: svrn/kafka
       tag: 2.13-3.5.1
       pullPolicy: IfNotPresent
     env:
@@ -428,7 +428,7 @@ kafka:
       enabled: true
       port: 9308
       image:
-        name: soveren/kafka-exporter
+        name: svrn/kafka-exporter
         tag: v1.7.0
       resources:
         requests:

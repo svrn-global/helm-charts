@@ -3,12 +3,12 @@ name: Release Charts
 on:
   push:
     tags:
-    - 'soveren-agent-[0-9]+.[0-9]+.[0-9]+'
-    - 'soveren-agent-[0-9]+.[0-9]+.[0-9]+-[a-z]+.[0-9]+'
-    - 'soveren-dar-sensor-[0-9]+.[0-9]+.[0-9]+'
-    - 'soveren-dar-sensor-[0-9]+.[0-9]+.[0-9]+-[a-z]+.[0-9]+'
-    - 'soveren-dar-ranger-[0-9]+.[0-9]+.[0-9]+'
-    - 'soveren-dar-ranger-[0-9]+.[0-9]+.[0-9]+-[a-z]+.[0-9]+'
+    - 'svrn-dim-sensor-[0-9]+.[0-9]+.[0-9]+'
+    - 'svrn-dim-sensor-[0-9]+.[0-9]+.[0-9]+-[a-z]+.[0-9]+'
+    - 'svrn-dar-sensor-[0-9]+.[0-9]+.[0-9]+'
+    - 'svrn-dar-sensor-[0-9]+.[0-9]+.[0-9]+-[a-z]+.[0-9]+'
+    - 'svrn-dar-ranger-[0-9]+.[0-9]+.[0-9]+'
+    - 'svrn-dar-ranger-[0-9]+.[0-9]+.[0-9]+-[a-z]+.[0-9]+'
 
 env:
   CR_OWNER: ${{ github.repository_owner }}
@@ -34,12 +34,12 @@ jobs:
     - name: Determine chart name from tag
       id: chart_info
       run: |
-        if [[ "${GITHUB_REF_NAME}" =~ ^soveren-agent-[0-9]+\.[0-9]+\.[0-9]+ ]]; then
-          echo "chart_name=soveren-agent" >> $GITHUB_ENV
-        elif [[ "${GITHUB_REF_NAME}" =~ ^soveren-dar-sensor-[0-9]+\.[0-9]+\.[0-9]+ ]]; then
-          echo "chart_name=soveren-dar-sensor" >> $GITHUB_ENV
-        elif [[ "${GITHUB_REF_NAME}" =~ ^soveren-dar-ranger-[0-9]+\.[0-9]+\.[0-9]+ ]]; then
-          echo "chart_name=soveren-dar-ranger" >> $GITHUB_ENV
+        if [[ "${GITHUB_REF_NAME}" =~ ^svrn-dim-sensor-[0-9]+\.[0-9]+\.[0-9]+ ]]; then
+          echo "chart_name=svrn-dim-sensor" >> $GITHUB_ENV
+        elif [[ "${GITHUB_REF_NAME}" =~ ^svrn-dar-sensor-[0-9]+\.[0-9]+\.[0-9]+ ]]; then
+          echo "chart_name=svrn-dar-sensor" >> $GITHUB_ENV
+        elif [[ "${GITHUB_REF_NAME}" =~ ^svrn-dar-ranger-[0-9]+\.[0-9]+\.[0-9]+ ]]; then
+          echo "chart_name=svrn-dar-ranger" >> $GITHUB_ENV
         else
           echo "ERROR: Tag does not match any known chart patterns."
           exit 1

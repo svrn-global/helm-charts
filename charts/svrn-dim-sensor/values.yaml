@@ -25,7 +25,7 @@ kafka:
     podAnnotations: {}
     podLabels: {}
     image:
-      name: soveren/kafka
+      name: svrn/kafka
       tag: 2.13-3.5.1
       pullPolicy: IfNotPresent
     env:
@@ -72,7 +72,7 @@ kafka:
       enabled: true
       port: 9308
       image:
-        name: soveren/kafka-exporter
+        name: svrn/kafka-exporter
         tag: v1.7.0
       resources:
         requests:
@@ -100,14 +100,14 @@ digger:
   token: ""
   clusterName: ""
   image:
-    name: soveren/digger
+    name: svrn/digger
     tag: v0.44.0
     pullPolicy: IfNotPresent
     # Default entrypoint for digger: '/usr/local/bin/digger --config /etc/config.yaml'
     # The use of these parameters is now tied to the use on the useExternalSecrets: true
     # Example for hashcorp/vault:
     #command: [ '/bin/bash', '-c' ]
-    #args: [ 'source /vault/secrets/soverentokens && /usr/local/bin/digger --config /etc/config.yaml' ]
+    #args: [ 'source /vault/secrets/svrntokens && /usr/local/bin/digger --config /etc/config.yaml' ]
   env: []
   # Example of how you can use custom volume mounts:
   # volumeMounts:
@@ -194,14 +194,14 @@ detectionTool:
   podAnnotations: {}
   podLabels: {}
   image:
-    name: soveren/detection-tool
+    name: svrn/detection-tool
     tag: v2.13.8
     pullPolicy: IfNotPresent
     # Default entrypoint for detection-tool: './entrypoint.sh'
     # The use of these parameters is now tied to the use on the useExternalSecrets: true
     # Example for hashcorp/vault:
     #command: [ '/bin/bash', '-c' ]
-    #args: [ 'source /vault/secrets/soverentokens && ./entrypoint.sh' ]
+    #args: [ 'source /vault/secrets/svrntokens && ./entrypoint.sh' ]
   env: []
   # See example in the crawler section
   # of how you can use custom volume mounts
@@ -241,7 +241,7 @@ interceptor:
   podAnnotations: {}
   podLabels: {}
   image:
-    name: soveren/interceptor
+    name: svrn/interceptor
     tag: v0.44.0
     pullPolicy: IfNotPresent
   updateStrategy:

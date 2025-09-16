@@ -1,4 +1,4 @@
-# Soveren Data-In-Motion (DIM) Sensor releases
+# Svrn Data-In-Motion (DIM) Sensor releases
 
 There are the following components of the DIM Sensor:
 

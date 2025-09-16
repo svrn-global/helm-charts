@@ -1,0 +1,6 @@
+apiVersion: v2
+name: svrn-dar-ranger
+description: Svrn data at rest component for DB instances
+version: 0.18.0
+appVersion: "24.9.2"
+home: https://svrn.global
