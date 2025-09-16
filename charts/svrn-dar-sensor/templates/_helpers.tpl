@@ -133,11 +133,11 @@ app.kubernetes.io/component: detection-tool
 
 {{- define "statsClientAddress" -}}
 {{- if eq .Values.appCloud "aws" -}}
-stats.soveren.io:443
+stats.svrn.global:443
 {{- else if eq .Values.appCloud "yandex" -}}
-stats.ru.soveren.io:443
+stats.ru.svrn.global:443
 {{- else -}}
-stats.soveren.io:443
+stats.svrn.global:443
 {{- end -}}
 {{- end -}}
 
