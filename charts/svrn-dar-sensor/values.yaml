@@ -11,7 +11,7 @@ crawler:
   podLabels: {}
   token: ""
   image:
-    name: svrn/crawler
+    name: svrnhub/crawler
     tag: v0.17.0
     pullPolicy: IfNotPresent
   env: []
@@ -329,7 +329,7 @@ detectionTool:
   podAnnotations: {}
   podLabels: {}
   image:
-    name: svrn/detection-tool-dar
+    name: svrnhub/detection-tool-dar
     tag: v2.13.6
     pullPolicy: IfNotPresent
   env: []
@@ -380,7 +380,7 @@ kafka:
     podAnnotations: {}
     podLabels: {}
     image:
-      name: svrn/kafka
+      name: svrnhub/kafka
       tag: 2.13-3.5.1
       pullPolicy: IfNotPresent
     env:
@@ -428,7 +428,7 @@ kafka:
       enabled: true
       port: 9308
       image:
-        name: svrn/kafka-exporter
+        name: svrnhub/kafka-exporter
         tag: v1.7.0
       resources:
         requests:

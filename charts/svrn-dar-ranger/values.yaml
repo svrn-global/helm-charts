@@ -16,7 +16,7 @@ ranger:
   # Should always be specified
   crawler_address:
   image:
-    name: svrn/ranger
+    name: svrnhub/ranger
     tag: v0.10.0
     pullPolicy: IfNotPresent
   env: []
