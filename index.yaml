@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  svrn-dar-ranger:
+  - apiVersion: v2
+    appVersion: 24.9.2
+    created: "2025-09-30T08:20:12.488691248Z"
+    description: Svrn data at rest component for DB instances
+    digest: e776cf904a63aad2265496fa58065412e4d8e8a33738af90a9fd9675959dd8e6
+    home: https://svrn.global
+    name: svrn-dar-ranger
+    urls:
+    - https://github.com/svrn-global/helm-charts/releases/download/svrn-dar-ranger-0.18.0-alpha.1/svrn-dar-ranger-0.18.0-alpha.1.tgz
+    version: 0.18.0-alpha.1
+generated: "2025-09-30T08:20:12.488702139Z"
