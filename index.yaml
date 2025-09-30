@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/svrn-global/helm-charts/releases/download/svrn-dar-ranger-0.18.0-alpha.1/svrn-dar-ranger-0.18.0-alpha.1.tgz
     version: 0.18.0-alpha.1
-generated: "2025-09-30T08:20:12.488702139Z"
+  svrn-dim-sensor:
+  - apiVersion: v2
+    appVersion: 25.3.2
+    created: "2025-09-30T08:22:07.621794001Z"
+    description: Data flow monitoring and analytics platform
+    digest: dc3834de2e46a1dac88908d139e4e60e311bb15d14943d2486b8029e10dcdeb0
+    home: https://svrn.global
+    name: svrn-dim-sensor
+    urls:
+    - https://github.com/svrn-global/helm-charts/releases/download/svrn-dim-sensor-1.52.0-alpha.1/svrn-dim-sensor-1.52.0-alpha.1.tgz
+    version: 1.52.0-alpha.1
+generated: "2025-09-30T08:22:07.62180456Z"
