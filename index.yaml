@@ -35,6 +35,16 @@ entries:
   svrn-dim-sensor:
   - apiVersion: v2
     appVersion: 25.3.2
+    created: "2025-10-01T12:52:10.461331239Z"
+    description: Data flow monitoring and analytics platform
+    digest: ba28df1a3781a23f427689a24e207931537d5cd486fb2b6e6e53e30e4d3a610d
+    home: https://svrn.global
+    name: svrn-dim-sensor
+    urls:
+    - https://github.com/svrn-global/helm-charts/releases/download/svrn-dim-sensor-1.52.0/svrn-dim-sensor-1.52.0.tgz
+    version: 1.52.0
+  - apiVersion: v2
+    appVersion: 25.3.2
     created: "2025-09-30T08:22:07.621794001Z"
     description: Data flow monitoring and analytics platform
     digest: dc3834de2e46a1dac88908d139e4e60e311bb15d14943d2486b8029e10dcdeb0
@@ -43,4 +53,4 @@ entries:
     urls:
     - https://github.com/svrn-global/helm-charts/releases/download/svrn-dim-sensor-1.52.0-alpha.1/svrn-dim-sensor-1.52.0-alpha.1.tgz
     version: 1.52.0-alpha.1
-generated: "2025-10-01T12:51:45.530412584Z"
+generated: "2025-10-01T12:52:10.461354475Z"
