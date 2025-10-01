@@ -2,7 +2,7 @@
 httpsProxy: ""
 httpsProxyNoProxy: ""
 useExternalSecrets: false
-appCloud: "aws"
+appCloud: ""
 
 crawler:
   deploymentAnnotations: {}
@@ -429,7 +429,7 @@ kafka:
       port: 9308
       image:
         name: svrnhub/kafka-exporter
-        tag: v1.7.0
+        tag: 2.13-3.5.1
       resources:
         requests:
           cpu: "100m"

@@ -1,6 +1,6 @@
 apiVersion: v2
 name: svrn-dim-sensor
 description: Data flow monitoring and analytics platform
-version: 1.52.0-alpha.1
+version: 1.52.0
 appVersion: "25.3.2"
 home: https://svrn.global
