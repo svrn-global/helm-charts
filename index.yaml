@@ -3,6 +3,16 @@ entries:
   svrn-dar-ranger:
   - apiVersion: v2
     appVersion: 24.9.2
+    created: "2025-10-01T12:51:45.530396855Z"
+    description: Svrn data at rest component for DB instances
+    digest: 78dfeb69d0c026503470d8f9ebede88955424d03833847af9fcf68b30022308f
+    home: https://svrn.global
+    name: svrn-dar-ranger
+    urls:
+    - https://github.com/svrn-global/helm-charts/releases/download/svrn-dar-ranger-0.18.0/svrn-dar-ranger-0.18.0.tgz
+    version: 0.18.0
+  - apiVersion: v2
+    appVersion: 24.9.2
     created: "2025-09-30T08:20:12.488691248Z"
     description: Svrn data at rest component for DB instances
     digest: e776cf904a63aad2265496fa58065412e4d8e8a33738af90a9fd9675959dd8e6
@@ -33,4 +43,4 @@ entries:
     urls:
     - https://github.com/svrn-global/helm-charts/releases/download/svrn-dim-sensor-1.52.0-alpha.1/svrn-dim-sensor-1.52.0-alpha.1.tgz
     version: 1.52.0-alpha.1
-generated: "2025-09-30T08:23:29.068556773Z"
+generated: "2025-10-01T12:51:45.530412584Z"
