@@ -77,7 +77,7 @@ crawler:
       # S3 security token service URL, including schema. Leave empty for AWS
       # For MinIO, leave it blank or set equal to url (see above)
       stsurl: ""
-      # S3 storage type. Acceptable values: aws, yandexcloud, minio
+      # S3 storage type. Acceptable values: aws, yandexcloud, minio, cloudru-s3e
       #
       # WARNING!
       # A separate DAR sensor must be deployed for each S3 implementation,
@@ -85,6 +85,7 @@ crawler:
       #
       type: "aws"
       # Access key ID
+      # For cloud.ru: tenant_id:access_key_id
       accessKeyId: ""
       # Secret access key
       secretAccessKey: ""
