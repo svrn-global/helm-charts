@@ -23,6 +23,16 @@ entries:
     version: 0.18.0-alpha.1
   svrn-dar-sensor:
   - apiVersion: v2
+    appVersion: 26.2.1
+    created: "2026-02-16T10:38:03.784442097Z"
+    description: Data at rest monitoring and analytics platform
+    digest: ce962f2c760368dec434bfb116d12b7f6e971dcedbcd94cc43c96d6281695b4f
+    home: https://svrn.global
+    name: svrn-dar-sensor
+    urls:
+    - https://github.com/svrn-global/helm-charts/releases/download/svrn-dar-sensor-0.27.0/svrn-dar-sensor-0.27.0.tgz
+    version: 0.27.0
+  - apiVersion: v2
     appVersion: 25.10.1
     created: "2025-10-14T17:54:09.165538119Z"
     description: Data at rest monitoring and analytics platform
@@ -83,4 +93,4 @@ entries:
     urls:
     - https://github.com/svrn-global/helm-charts/releases/download/svrn-dim-sensor-1.52.0-alpha.1/svrn-dim-sensor-1.52.0-alpha.1.tgz
     version: 1.52.0-alpha.1
-generated: "2026-02-16T10:34:21.535776235Z"
+generated: "2026-02-16T10:38:03.784471357Z"
