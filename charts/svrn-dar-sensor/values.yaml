@@ -12,7 +12,7 @@ crawler:
   token: ""
   image:
     name: svrnhub/crawler
-    tag: v0.17.0
+    tag: v0.17.1
     pullPolicy: IfNotPresent
   env: []
   # Example of how you can use custom volume mounts:
@@ -331,7 +331,7 @@ detectionTool:
   podLabels: {}
   image:
     name: svrnhub/detection-tool-dar
-    tag: v2.13.6
+    tag: v2.14.0
     pullPolicy: IfNotPresent
   env: []
   # See example in the crawler section
